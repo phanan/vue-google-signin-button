@@ -1,4 +1,8 @@
 (function () {
+  function err (msg) {
+    typeof console !== 'undefined' && console.error(`[g-signin-button] ${msg}`)
+  }
+
   function install (Vue) {
     Vue.component('g-signin-button', {
       name: 'g-signin-button',
@@ -14,12 +18,12 @@
       },
       mounted () {
         if (!window.gapi) {
-          Vue.util.warn('"https://apis.google.com/js/api:client.js" needs to be included as a <script>.')
+          err('"https://apis.google.com/js/api:client.js" needs to be included as a <script>.')
           return
         }
 
         if (!this.params.client_id) {
-          Vue.util.warn('params.client_id must be specified.')
+          err('params.client_id must be specified.')
           return
         }
 
