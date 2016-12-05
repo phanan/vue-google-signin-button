@@ -1,0 +1,29 @@
+{
+  "name": "vue-google-signin-button",
+  "version": "1.0.0",
+  "description": "A simple plugin to include a Google sign-in button into your web app",
+  "main": "dist/vue-google-signin-button.min.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint index.js",
+    "build": "./node_modules/.bin/eslint index.js && BABEL_ENV=production && babel index.js -o ./dist/vue-google-signin-button.min.js"
+  },
+  "keywords": [
+    "Vue",
+    "Google",
+    "oAuth",
+    "sign-in",
+    "sign in",
+    "log-in",
+    "log in"
+  ],
+  "author": "Phan An <me@phanan.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-babili": "0.0.9",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.11.1",
+    "eslint-config-vue": "^2.0.1",
+    "eslint-plugin-vue": "^1.0.0"
+  }
+}
