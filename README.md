@@ -2,6 +2,8 @@
 
 > A simple [Vue](https://vuejs.org) plugin to include a [Google sign-in button](https://developers.google.com/identity/sign-in/web/sign-in) into your web app.
 
+<img src="https://github.com/phanan/vue-google-signin-button/raw/master/screenshot.png" width="677" alt="Screenshot">
+
 ## Install
 
 This plugin can be installed as a module
@@ -77,9 +79,7 @@ export default {
 </style>
 ```
 
-That's it. FWIW, here's a screenshot:
-
-<img src="screenshot.png" width="677" alt="Screenshot">
+That's it!
 
 ## License
 
