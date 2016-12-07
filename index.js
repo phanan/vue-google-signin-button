@@ -6,7 +6,14 @@
   function install (Vue) {
     Vue.component('g-signin-button', {
       name: 'g-signin-button',
-      template: '<div class="g-signin-button" ref="signinBtn"><slot></slot></div>',
+      render (createElement) {
+        return createElement('div', {
+          attrs: {
+            class: 'g-signin-button'
+          },
+          ref: 'signinBtn'
+        }, this.$slots.default)
+      },
       props: {
         params: {
           type: Object,
