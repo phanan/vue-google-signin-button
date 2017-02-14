@@ -7,6 +7,12 @@
     "lint": "./node_modules/.bin/eslint index.js",
     "build": "./node_modules/.bin/eslint index.js && BABEL_ENV=production && babel index.js -o ./dist/vue-google-signin-button.min.js"
   },
+  "eslintConfig": {
+    "extends": "vue"
+  },
+  "babel": {
+    "presets": ["es2015", "babili"]
+  },
   "keywords": [
     "Vue",
     "Google",
