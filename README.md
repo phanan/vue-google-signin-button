@@ -81,6 +81,8 @@ export default {
 
 That's it!
 
+> Looking for the [Facebook counterpart](https://github.com/phanan/vue-facebook-signin-button)?
+
 ## License
 
 MIT © [Phan An](http://phanan.net)
