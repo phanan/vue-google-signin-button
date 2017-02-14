@@ -12,13 +12,13 @@ This plugin can be installed as a module
 $ npm install vue-google-signin-button
 ```
 
-or, if you're not in a module environment, just include it as a `<script>`.
+or, if you're not in a modular environment, just include it as a `<script>`.
 
 ## Usage
 
 > Important: `https://apis.google.com/js/api:client.js` must be included as a `<script>` in your web app, as this plugin depends on it.
 
-Step 1: `import` and `use` the plugin if you're in a module environment (you don't need this step otherwise, as the plugin will register itself).
+Step 1: `import` and `use` the plugin if you're in a modular environment (you don't need this step otherwise, as the plugin will register itself).
 
 ``` js
 import GSignInButton from 'vue-google-signin-button'
