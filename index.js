@@ -9,7 +9,8 @@
       render (createElement) {
         return createElement('button', {
           attrs: {
-            class: 'g-signin-button'
+            class: 'g-signin-button',
+            type: 'button'
           },
           ref: 'signinBtn'
         }, this.$slots.default)
