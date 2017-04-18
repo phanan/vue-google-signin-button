@@ -1,6 +1,6 @@
 {
   "name": "vue-google-signin-button",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple plugin to include a Google sign-in button into your web app",
   "main": "dist/vue-google-signin-button.min.js",
   "scripts": {
@@ -11,7 +11,10 @@
     "extends": "vue"
   },
   "babel": {
-    "presets": ["es2015", "babili"]
+    "presets": [
+      "es2015",
+      "babili"
+    ]
   },
   "keywords": [
     "Vue",
