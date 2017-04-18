@@ -24,6 +24,10 @@
   ],
   "author": "Phan An <me@phanan.net>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phanan/vue-google-signin-button/"
+  },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-babili": "0.0.9",
