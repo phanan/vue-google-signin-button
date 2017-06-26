@@ -11,7 +11,10 @@
           attrs: {
             class: 'g-signin-button'
           },
-          ref: 'signinBtn'
+          ref: 'signinBtn',
+          on: {
+            success: this.success
+          }
         }, this.$slots.default)
       },
       props: {
@@ -21,6 +24,11 @@
           default () {
             return {}
           }
+        }
+      },
+      methods: {
+        success: function (customEvent) {
+          this.$emit('success', customEvent.detail)
         }
       },
       mounted () {
