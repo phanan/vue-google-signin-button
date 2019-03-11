@@ -21,6 +21,13 @@
           default () {
             return {}
           }
+        },
+        signinOptions: {
+          type: Object,
+          required: false,
+          default () {
+            return {}
+          }
         }
       },
       mounted () {
@@ -36,7 +43,7 @@
 
         window.gapi.load('auth2', () => {
           const auth2 = window.gapi.auth2.init(this.params)
-          auth2.attachClickHandler(this.$refs.signinBtn, {}, googleUser => {
+          auth2.attachClickHandler(this.$refs.signinBtn, this.signinOptions, googleUser => {
             this.$emit('success', googleUser)
           }, error => {
             this.$emit('error', error)
