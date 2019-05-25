@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint index.js",
     "build": "./node_modules/.bin/eslint index.js && BABEL_ENV=production && babel index.js -o ./dist/vue-google-signin-button.min.js",
-    "publish": "np"
+    "np": "np"
   },
   "eslintConfig": {
     "extends": "vue"
