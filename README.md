@@ -31,6 +31,7 @@ Step 2: Now you have a `g-signin-button` global component, ready for use. It's b
 <template>
   <g-signin-button
     :params="googleSignInParams"
+    :options="googleSignInOptions"
     @success="onSignInSuccess"
     @error="onSignInError">
     Sign in with Google
@@ -49,7 +50,13 @@ export default {
        */
       googleSignInParams: {
         client_id: 'YOUR_APP_CLIENT_ID.apps.googleusercontent.com'
-      }
+      },
+      /**
+       * optional: defaults to {} if not present
+       * allows to transmit signin options according to : https://developers.google.com/identity/sign-in/web/reference#googleauthsigninoptions
+       * @type {Object}
+       */
+      googleSignInOptions: {}
     }
   },
   methods: {
