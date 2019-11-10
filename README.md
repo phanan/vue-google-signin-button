@@ -76,6 +76,9 @@ export default {
   color: #fff;
   box-shadow: 0 3px 0 #0f69ff;
 }
+.g-signin-button:hover {
+    text-decoration: underline;
+}
 </style>
 ```
 
