@@ -75,6 +75,7 @@ export default {
   background-color: #3c82f7;
   color: #fff;
   box-shadow: 0 3px 0 #0f69ff;
+  cursor: pointer;
 }
 </style>
 ```
