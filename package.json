@@ -4,8 +4,8 @@
   "description": "A simple plugin to include a Google sign-in button into your web app",
   "main": "dist/vue-google-signin-button.min.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint index.js",
-    "build": "./node_modules/.bin/eslint index.js && BABEL_ENV=production && babel index.js -o ./dist/vue-google-signin-button.min.js"
+    "lint": "$(npm bin)/eslint index.js",
+    "build": "$(npm bin)/eslint index.js && BABEL_ENV=production && $(npm bin)/babel index.js -o ./dist/vue-google-signin-button.min.js"
   },
   "eslintConfig": {
     "extends": "vue"
