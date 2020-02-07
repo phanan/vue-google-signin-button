@@ -48,7 +48,7 @@ export default {
        * @type {Object}
        */
       googleSignInParams: {
-        client_id: 'YOUR_APP_CLIENT_ID.apps.googleusercontent.com'
+        clientId: 'YOUR_APP_CLIENT_ID.apps.googleusercontent.com'
       }
     }
   },
