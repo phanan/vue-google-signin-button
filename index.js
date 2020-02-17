@@ -29,8 +29,8 @@
           return
         }
 
-        if (!this.params.client_id) {
-          err('params.client_id must be specified.')
+        if (!this.params.clientId && !this.params.client_id) {
+          err('Client Id must be specified.')
           return
         }
 
