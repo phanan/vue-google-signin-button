@@ -7,7 +7,7 @@
     Vue.component('g-signin-button', {
       name: 'g-signin-button',
       render (createElement) {
-        return createElement('div', {
+        return createElement('button', {
           attrs: {
             class: 'g-signin-button'
           },
@@ -35,6 +35,9 @@
         }
 
         window.gapi.load('auth2', () => {
+          this.$refs.signinBtn.addEventListener('click', e => {
+            this.$emit('click', e)
+          })
           const auth2 = window.gapi.auth2.init(this.params)
           auth2.attachClickHandler(this.$refs.signinBtn, {}, googleUser => {
             this.$emit('success', googleUser)
