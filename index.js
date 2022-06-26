@@ -6,7 +6,16 @@
   function install (Vue) {
     Vue.component('g-signin-button', {
       name: 'g-signin-button',
-      render (createElement) {
+      render(hArg) {
+
+        var createElement
+        const VueVersion = app.version.split('.')[0]
+
+        if (VueVersion >= 3)
+          createElement = h
+        else
+          createElement = hArg
+
         return createElement('div', {
           attrs: {
             class: 'g-signin-button'
